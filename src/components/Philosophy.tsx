@@ -6,10 +6,24 @@ import Image from "next/image";
 export default function Philosophy() {
   return (
     <section id="about" className="py-32 bg-[#020202] text-white">
-      <div className="max-w-[1920px] mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-32 items-center">
+      <div className="max-w-[1920px] mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-y-12 gap-x-16 md:gap-x-32 items-start md:items-center">
         
-        {/* Visual Content - Keeping the "Superb" layered look */}
-        <div className="relative order-2 md:order-1">
+        {/* Title Block - Order 1 Mobile, Col 2 Row 1 Desktop */}
+        <div className="order-1 md:col-start-2 md:row-start-1 text-left">
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+            >
+                <h3 className="text-5xl md:text-6xl lg:text-7xl font-display mb-4 md:mb-10 leading-[0.9] md:leading-[1.1]">
+                    Trust is our <br/>primary engine.
+                </h3>
+            </motion.div>
+        </div>
+
+        {/* Visual Content (Image) - Order 2 Mobile, Col 1 Row 1-2 Desktop */}
+        <div className="relative order-2 md:col-start-1 md:row-start-1 md:row-span-2 my-8 md:my-0">
             <div className="absolute -inset-4 border border-white/5 z-0" />
             <div className="relative z-10 aspect-[3/4] w-full max-w-md mx-auto md:mr-auto overflow-hidden bg-[#0a0a0a]">
                 <Image
@@ -32,17 +46,14 @@ export default function Philosophy() {
             </motion.div>
         </div>
 
-        {/* Text Content */}
-        <div className="order-1 md:order-2 text-left">
-            <motion.div
+        {/* Description Block - Order 3 Mobile, Col 2 Row 2 Desktop */}
+        <div className="order-3 md:col-start-2 md:row-start-2 text-left">
+             <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
             >
-                <h3 className="text-4xl md:text-6xl lg:text-7xl font-display mb-10 leading-[1.1]">
-                    Trust is our <br/>primary engine.
-                </h3>
                 <div className="space-y-8 text-white/60 text-lg font-light leading-relaxed max-w-lg">
                     <p>
                         We guarantee top condition vehicles with full history titles and guaranteed technical inspection.
@@ -54,13 +65,13 @@ export default function Philosophy() {
                     </p>
                 </div>
 
-                <div className="mt-16 flex gap-16 border-t border-white/10 pt-8">
+                <div className="mt-16 flex gap-12 md:gap-16 border-t border-white/10 pt-8">
                     <div>
-                        <span className="block text-5xl font-display text-white mb-2">500+</span>
+                        <span className="block text-4xl md:text-5xl font-display text-white mb-2">500+</span>
                         <span className="text-xs uppercase tracking-widest text-[#ff3c00]">Vehicles Delivered</span>
                     </div>
                     <div>
-                        <span className="block text-5xl font-display text-white mb-2">100%</span>
+                        <span className="block text-4xl md:text-5xl font-display text-white mb-2">100%</span>
                         <span className="text-xs uppercase tracking-widest text-[#ff3c00]">Verified History</span>
                     </div>
                 </div>

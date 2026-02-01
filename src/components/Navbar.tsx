@@ -3,7 +3,7 @@
 import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -13,6 +13,15 @@ export default function Navbar() {
   const [isVisible, setIsVisible] = useState(true);
   const { scrollY } = useScroll();
   const [lastScrollY, setLastScrollY] = useState(0);
+
+  // Disable scrolling when mobile menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [isOpen]);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const currentScrollY = latest;
@@ -33,7 +42,7 @@ export default function Navbar() {
         className={cn(
             "fixed top-0 left-0 right-0 z-50 px-6 md:px-12 text-white transition-all duration-500",
             isScrolled ? "py-6 bg-[#020202]/90 backdrop-blur-md" : "py-6 md:py-10 bg-transparent",
-            !isVisible && "-translate-y-full"
+            (!isVisible && !isOpen) && "-translate-y-full"
         )}
     >
       <div className="flex justify-between items-center max-w-[1920px] mx-auto relative z-50">
@@ -56,7 +65,7 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-12">
           {["Inventory", "Services", "About", "Contact"].map((item) => (
-            <Link
+            <a
               key={item}
               href={`#${item.toLowerCase()}`}
               className={cn(
@@ -65,7 +74,7 @@ export default function Navbar() {
               )}
             >
               {item}
-            </Link>
+            </a>
           ))}
         </div>
 
@@ -78,19 +87,19 @@ export default function Navbar() {
       {/* Mobile Menu Overlay */}
       {isOpen && (
         <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="fixed inset-0 bg-[#020202] z-40 flex flex-col items-center justify-center space-y-8 md:hidden"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="fixed top-0 left-0 w-screen h-screen bg-[#020202] z-40 flex flex-col items-center justify-center space-y-8 md:hidden"
         >
           {["Inventory", "Services", "About", "Contact"].map((item) => (
-            <Link
+            <a
               key={item}
               href={`#${item.toLowerCase()}`}
               className="text-2xl uppercase tracking-widest hover:text-[#ff3c00] transition-colors"
               onClick={() => setIsOpen(false)}
             >
               {item}
-            </Link>
+            </a>
           ))}
         </motion.div>
       )}

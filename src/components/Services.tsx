@@ -49,7 +49,7 @@ export default function Services() {
                     viewport={{ once: true }}
                     className="group cursor-pointer"
                 >
-                    <div className="border-b border-white/10 pb-12 pt-8 min-h-[320px] flex flex-col justify-between group-hover:border-[#ff3c00] transition-colors duration-500 relative">
+                    <div className="border-b border-white/10 pb-12 pt-8 flex flex-col justify-between group-hover:border-[#ff3c00] transition-colors duration-500 relative">
                         
                         <div className="mt-auto">
                              <div className="flex justify-between items-start mb-6">

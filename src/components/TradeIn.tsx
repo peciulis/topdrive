@@ -21,9 +21,11 @@ export default function TradeIn() {
               competitive market rates for verified luxury cars.
             </p>
 
-            <Button variant="outline" href="#contact">
-                Get a Valuation
-            </Button>
+            <div className="mb-12 md:mb-0">
+                <Button variant="outline" href="#contact">
+                    Get a Valuation
+                </Button>
+            </div>
           </div>
 
           {/* List Content - Minimal Rows */}

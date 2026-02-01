@@ -6,12 +6,12 @@ export default function CarCard({ car }:{ car: { make: string; model: string; ye
   return (
     <div className="group cursor-pointer">
       <div className="relative aspect-[4/3] w-full overflow-hidden mb-6 bg-[#0a0a0a]">
-        <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors z-10" />
+        <div className="absolute inset-0 bg-transparent md:bg-black/20 md:group-hover:bg-transparent transition-colors z-10" />
         <Image
           src={car.image}
           alt={`${car.make} ${car.model}`}
           fill
-          className="object-cover transform transition-transform duration-700 ease-in-out opacity-90 group-hover:opacity-100"
+          className="object-cover transform transition-transform duration-1200 ease-in-out group-hover:opacity-100"
         />
         
         {/* Badges Overlay */}

@@ -55,8 +55,8 @@ export default function Contact() {
                     />
                 </div>
 
-                <div className="pt-8 flex justify-center">
-                    <Button variant="primary" className="w-full md:w-auto min-w-[200px]">
+                <div className="pt-8 flex justify-center w-full">
+                    <Button variant="primary" className="w-full md:w-auto min-w-[200px] justify-center">
                         Send Message
                     </Button>
                 </div>

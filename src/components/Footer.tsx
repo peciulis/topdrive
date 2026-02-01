@@ -6,16 +6,16 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="bg-[#020202] text-white py-24 border-t border-white/5 px-6 md:px-12">
-        <div className="max-w-[1920px] mx-auto flex flex-col md:flex-row justify-between items-start gap-12 lg:gap-24">
+        <div className="max-w-[1920px] mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-12 lg:gap-24 text-center md:text-left">
             
             {/* Brand Side */}
-            <div className="flex flex-col justify-between h-full min-h-[160px] max-w-md">
+            <div className="flex flex-col items-center md:items-start justify-between h-full min-h-[160px] max-w-md">
                  <div className="w-40 h-10 relative mb-8">
                     <Image 
                         src="/Topdrive_Header_Logo.svg" 
                         alt="TopDrive" 
                         fill
-                        className="object-contain object-left"
+                        className="object-contain object-center md:object-left"
                     />
                 </div>
                 
@@ -25,7 +25,7 @@ export default function Footer() {
             </div>
 
             {/* Info Side */}
-            <div className="flex flex-col md:flex-row gap-16 md:gap-32">
+            <div className="flex flex-col md:flex-row gap-16 md:gap-32 w-full md:w-auto items-center md:items-start">
                 {/* Location */}
                 <div>
                     <h4 className="text-xs uppercase tracking-[0.2em] text-[#ff3c00] mb-8">Location</h4>

@@ -13,8 +13,8 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "TopDrive | Curated Luxury Mobility",
-  description: "Premium vehicles sourced, verified, and delivered with precision.",
+  title: "TopDrive.lv - Excellence In Motion.",
+  description: "Professional long-term car rental and car sales. Experience the road without worries.",
 };
 
 export default function RootLayout({

@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     question: "Where are you located and do you deliver?",
-    answer: "We are based in Vilnius, Lithuania. However, we deliver vehicles directly to your doorstep anywhere in the Baltics and select EU countries via secure enclosed transport."
+    answer: "We are based in Riga, Latvia. However, we deliver vehicles directly to your doorstep anywhere in the Baltics and select EU countries via secure enclosed transport."
   }
 ];
 
