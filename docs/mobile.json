@@ -1,0 +1,22 @@
+{
+  "mobile": {
+    "principles": [
+      "cinematic vertical flow",
+      "large typography",
+      "minimal UI",
+      "gesture-driven navigation"
+    ],
+    "hero": {
+      "layout": "full-screen car + text overlay",
+      "cta": "bottom fixed button"
+    },
+    "navigation": {
+      "type": "floating minimal menu",
+      "accent": "#ff3c00"
+    },
+    "catalogue": {
+      "layout": "stacked cards",
+      "filters": "slide-up panel"
+    }
+  }
+}

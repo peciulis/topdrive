@@ -1,0 +1,40 @@
+{
+  "fonts": {
+    "primary": "Satoshi / Inter / SF Pro",
+    "accent_serif": "Canela / Playfair Display"
+  },
+  "scale": {
+    "hero_xl": {
+      "size": 96,
+      "weight": 500,
+      "line_height": 1.05,
+      "tracking": -0.02
+    },
+    "hero_l": {
+      "size": 64,
+      "weight": 500,
+      "line_height": 1.1,
+      "tracking": -0.01
+    },
+    "h1": {
+      "size": 48,
+      "weight": 500,
+      "line_height": 1.15
+    },
+    "h2": {
+      "size": 32,
+      "weight": 500,
+      "line_height": 1.2
+    },
+    "body": {
+      "size": 16,
+      "weight": 400,
+      "line_height": 1.6
+    },
+    "micro": {
+      "size": 12,
+      "weight": 500,
+      "tracking": 0.12
+    }
+  }
+}

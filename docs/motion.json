@@ -1,0 +1,24 @@
+{
+  "interactions": [
+    {
+      "element": "hero_car",
+      "effect": "slow fade + parallax",
+      "duration": "2.5s"
+    },
+    {
+      "element": "text_hover",
+      "effect": "underline expansion in accent color",
+      "duration": "0.3s"
+    },
+    {
+      "element": "cards",
+      "effect": "3D lift + shadow",
+      "duration": "0.4s"
+    },
+    {
+      "element": "scroll_indicator",
+      "effect": "vertical pulse line",
+      "color": "#ff3c00"
+    }
+  ]
+}

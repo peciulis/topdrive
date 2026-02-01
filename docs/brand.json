@@ -1,0 +1,20 @@
+{
+  "brand": {
+    "name": "TopDrive",
+    "positioning": "Curated luxury mobility platform for premium pre-owned vehicles and long-term ownership alternatives.",
+    "core_values": [
+      "Precision",
+      "Transparency",
+      "Exclusivity",
+      "European heritage",
+      "Engineering-driven trust"
+    ],
+    "tone_of_voice": {
+      "style": "confident, minimal, editorial, technical",
+      "avoid": ["cheap sales language", "exaggeration", "mass-market tone"],
+      "keywords": ["curated", "verified", "engineered", "sourced", "bespoke"]
+    },
+    "brand_message": "Luxury is not bought. It is curated.",
+    "emotional_goal": "Make users feel they are entering a private automotive gallery, not a marketplace."
+  }
+}

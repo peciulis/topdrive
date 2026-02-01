@@ -1,0 +1,16 @@
+{
+  "hero": {
+    "headline": "Curated Luxury Mobility",
+    "subheadline": "Premium vehicles sourced across Europe. Verified, engineered, delivered."
+  },
+  "services": {
+    "car_sales": "Verified luxury vehicles with transparent pricing and full support.",
+    "long_term_rental": "A premium alternative to ownership, designed for effortless driving.",
+    "catalogue": "Curated inventory with intelligent filtering and complete vehicle history.",
+    "eu_auctions": "Direct access to Europe’s best auctions with full import сопровождение."
+  },
+  "cta": {
+    "primary": "Explore Collection",
+    "consultation": "Request Consultation"
+  }
+}

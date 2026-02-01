@@ -1,0 +1,28 @@
+{
+  "buttons": {
+    "primary": {
+      "background": "#ff3c00",
+      "text": "#ffffff",
+      "hover": "#ff5a2a",
+      "shape": "sharp",
+      "padding": "16px 32px"
+    },
+    "secondary": {
+      "background": "transparent",
+      "border": "1px solid #ffffff",
+      "hover_border": "#ff3c00"
+    }
+  },
+  "cards": {
+    "vehicle_card": {
+      "background": "#0a0a0a",
+      "hover_effect": "lift + glow",
+      "fields": ["image", "model", "price", "specs"]
+    }
+  },
+  "filters": {
+    "style": "floating minimal",
+    "fields": ["brand", "price", "year", "mileage"],
+    "active_color": "#ff3c00"
+  }
+}

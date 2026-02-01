@@ -1,0 +1,76 @@
+{
+  "homepage": {
+    "sections": [
+      {
+        "id": "hero",
+        "layout": "split-cinematic",
+        "content": {
+          "logo": "TopDrive",
+          "headline": "Curated Luxury Mobility",
+          "subheadline": "Premium vehicles sourced, verified, and delivered with precision.",
+          "cta_primary": "Explore Collection",
+          "cta_secondary": "EU Auctions"
+        },
+        "visual": {
+          "style": "dark showroom",
+          "elements": ["car silhouette", "red motion line", "grain texture"]
+        }
+      },
+      {
+        "id": "brand_statement",
+        "headline": "We don’t sell cars.\nWe curate ownership.",
+        "text": "TopDrive sources premium pre-owned vehicles across Europe with full verification, transparent pricing, and concierge-level support."
+      },
+      {
+        "id": "services",
+        "items": [
+          {
+            "title": "Car Sales",
+            "description": "Transparent transactions and verified luxury vehicles with full сопровождение."
+          },
+          {
+            "title": "Long-Term Rental",
+            "description": "A premium alternative to ownership with maintenance and insurance included."
+          },
+          {
+            "title": "Available Catalogue",
+            "description": "Curated inventory with intelligent filtering and detailed vehicle history."
+          },
+          {
+            "title": "EU Auction Cars",
+            "description": "Direct access to Europe’s top auctions with full import support."
+          }
+        ]
+      },
+      {
+        "id": "featured_cars",
+        "layout": "gallery-editorial",
+        "card_template": {
+          "fields": ["model", "price", "year", "mileage", "hp"]
+        }
+      },
+      {
+        "id": "eu_auction_section",
+        "headline": "European Auction Intelligence",
+        "stats": [
+          "+320 sourced vehicles",
+          "12 partner auctions",
+          "98% successful deliveries"
+        ]
+      },
+      {
+        "id": "trust",
+        "stats": [
+          "500+ vehicles delivered",
+          "10+ years expertise",
+          "5 countries"
+        ]
+      },
+      {
+        "id": "cta_final",
+        "headline": "Your next car should feel inevitable.",
+        "cta": "Request Consultation"
+      }
+    ]
+  }
+}

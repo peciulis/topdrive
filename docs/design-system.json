@@ -1,0 +1,41 @@
+{
+  "colors": {
+    "base": {
+      "background": "#020202",
+      "primary_text": "#ffffff",
+      "secondary_text": "#6b6b6b"
+    },
+    "accent": {
+      "primary": "#ff3c00",
+      "hover": "#ff5a2a",
+      "muted": "#1c1c1c"
+    },
+    "panels": {
+      "surface_1": "#0a0a0a",
+      "surface_2": "#141414"
+    }
+  },
+  "grid": {
+    "desktop": {
+      "columns": 12,
+      "gutter": 32,
+      "max_width": 1440,
+      "margin": 96
+    },
+    "mobile": {
+      "columns": 4,
+      "gutter": 16,
+      "margin": 20
+    }
+  },
+  "spacing_scale": [4, 8, 12, 16, 24, 32, 48, 64, 96, 128],
+  "radius": {
+    "small": 4,
+    "medium": 8,
+    "large": 16
+  },
+  "elevation": {
+    "card": "0 20px 60px rgba(0,0,0,0.6)",
+    "hover": "0 30px 80px rgba(0,0,0,0.8)"
+  }
+}
